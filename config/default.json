@@ -1,3 +1,4 @@
 {
-    "mongoURL": "mongodb+srv://shivam:shivaom@321@devconnectors.by5ah.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURL": "mongodb+srv://shivam:shivaom@321@devconnectors.by5ah.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtToken": "mylogintoken"
 }
