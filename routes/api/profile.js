@@ -7,8 +7,8 @@ const config = require('config');
 const { body, validationResult } = require('express-validator');
 
 const auth = require('./../../middleware/auth')
-const Profile = require('./../../modules/Profile');
-const User = require('./../../modules/User');
+const Profile = require('./../../models/Profile');
+const User = require('./../../models/User');
 
 // @route GET api/profile/me
 // @desc Get current user profile
@@ -336,7 +336,7 @@ router.get('/github/:username', async (req, res) => {
             if(error) console.error(error);
 
             if(response.statusCode !== 200) {
-                return res.status(404).json({ msg: 'No Github profile found'});
+                return res.status(404).json({ msg: 'No Github profile found!'});
             }
 
             res.json(JSON.parse(body));
