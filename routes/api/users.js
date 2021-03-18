@@ -14,7 +14,6 @@ const User = require('./../../models/User');
 router.get('/', async (req, res) => {
   try {
     const users = await User.find();
-    res.json(users);
   } catch (err) {
     console.error(err.message);
     res.status(400).send('Server Error!');
